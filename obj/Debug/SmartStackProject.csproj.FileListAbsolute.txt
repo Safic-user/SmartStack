@@ -1,0 +1,6 @@
+C:\Users\user\source\repos\SmartStack\bin\Debug\SmartStack.dll
+C:\Users\user\source\repos\SmartStack\bin\Debug\SmartStack.pdb
+C:\Users\user\source\repos\SmartStack\obj\Debug\SmartStackProject.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\SmartStack\obj\Debug\SmartStackProject.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\SmartStack\obj\Debug\SmartStack.dll
+C:\Users\user\source\repos\SmartStack\obj\Debug\SmartStack.pdb
