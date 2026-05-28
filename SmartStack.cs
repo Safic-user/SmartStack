@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace SmartStackProject
 {
-    public class SmartStack<T>:IEnumerable<T>
+    public class SmartStack<T> : IEnumerable<T>
     {
         private T[] _items;
         private int _count;
@@ -75,18 +75,23 @@ namespace SmartStackProject
         {
             foreach (var item in _items)
             {
-                yield return item; 
+                yield return item;
             }
         }
         IEnumerator IEnumerable.GetEnumerator() { return GetEnumerator(); }
 
-        public T this[int depth] 
-        {  
-            get 
+        public T this[int depth]
+        {
+            get
             {
                 if (depth < 0 || depth >= _count) throw new ArgumentOutOfRangeException("Выход за границы коллекции.");
-                return _items[depth]; 
-            } 
+                return _items[_count - 1 -depth];
+            }
+            set
+            {
+                if (depth < 0 || depth >= _count) throw new ArgumentOutOfRangeException("Выход за границы коллекции.");
+                _items[_count - 1 -depth] = value;
+            }
         }
 
 
